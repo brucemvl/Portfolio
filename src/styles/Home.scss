@@ -52,14 +52,19 @@
         transform: translateY(-9px) rotate(90deg);
     }
 
-.dropdown {
+.menu {
     height: 10em;
     width: 8em;
     transform: translateX(-90%);
     background-color: red;
-    animation: drop 0.8s ease-in-out;
+    animation: drop 0.9s ease-in-out;
     position: absolute;
     margin: 1%;
+}
+
+.inactive {
+    animation: close 0.8s ease-in-out;
+    display: none;
 }
 
 @keyframes drop {
@@ -69,11 +74,24 @@
         
     }
 
-    80%{
+    50%{
         
         opacity: 0;
        
     }
 
     
+}
+
+@keyframes close {
+    0%{
+        opacity: 1;
+        display: flex;
+
+    }
+
+    100% {
+        transform: translateX(90%);
+        opacity: 0;
+    }
 }

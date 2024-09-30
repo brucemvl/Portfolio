@@ -19,6 +19,7 @@ function Home(){
                 <span></span>
                 <span></span>
             </div>
+            <nav className="menu inactive"></nav>
             </div>
             :
             <div>
@@ -27,7 +28,11 @@ function Home(){
                 <span></span>
                 <span></span>
             </div>
-            <div className="dropdown"></div>
+            <nav className="menu">
+                <ul>
+
+                </ul>
+            </nav>
 
             </div>
             
