@@ -11,19 +11,27 @@ function Home(){
 
 
     return (
-        <div>
+        <div className="blocpage">
             {active ?
+            <div>
             <div className="navMenu" onClick={anim}>
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
+            </div>
             :
+            <div>
             <div className="navMenu active" onClick={anim}>
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
+            <div className="dropdown"></div>
+
+            </div>
+            
+            
 
 }
         </div>

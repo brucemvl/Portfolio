@@ -1,5 +1,14 @@
+.blocpage {
+    display: flex;
+    justify-content: end;
+}
 .navMenu {
     width: 28px;
+    height: 100%;
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .navMenu > span {
@@ -43,3 +52,28 @@
         transform: translateY(-9px) rotate(90deg);
     }
 
+.dropdown {
+    height: 10em;
+    width: 8em;
+    transform: translateX(-90%);
+    background-color: red;
+    animation: drop 0.8s ease-in-out;
+    position: absolute;
+    margin: 1%;
+}
+
+@keyframes drop {
+    0%{
+        transform: translateX(90%);
+        opacity: 0;
+        
+    }
+
+    80%{
+        
+        opacity: 0;
+       
+    }
+
+    
+}
