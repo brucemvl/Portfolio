@@ -1,4 +1,16 @@
 header {
-    height: 8em;
+    height: 14em;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .logoAndMenu {
+        display: flex;
+        flex-direction: column;
+        gap: 4em;
+
+        img {
+            height: 5em;
+        }
+    }
 }

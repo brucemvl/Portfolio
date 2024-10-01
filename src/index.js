@@ -1,10 +1,14 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home.jsx'
 import Header from './components/Header.jsx'
+
  
-ReactDOM.render(
+import { createRoot } from 'react-dom/client';
+const container = document.getElementById('root');
+const root = createRoot(container);
+
+root.render(
     <React.StrictMode>
         <Router>
           <Header />
@@ -12,6 +16,5 @@ ReactDOM.render(
                 <Route path="/" element={<Home />} />
             </Routes>
                   </Router>
-    </React.StrictMode>,
-document.getElementById('root')
+    </React.StrictMode>
 )
