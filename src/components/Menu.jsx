@@ -1,6 +1,6 @@
 import { useState } from "react"
 import "../styles/Menu.scss"
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
 function Menu() {
 
@@ -30,10 +30,10 @@ function Menu() {
                     </div>
                     <nav className="menu">
                         <ul>
-                           <Link><li>Présentation</li></Link> 
-                           <Link><li>Mes Travaux</li></Link> 
-                           <Link><li>Mon CV</li></Link> 
-                           <Link><li>Me Contacter</li></Link> 
+                           <NavLink to={"/"}><li>Présentation</li></NavLink> 
+                           <NavLink to={"/travaux"}><li>Mes Travaux</li></NavLink> 
+                           <NavLink><li>Mon CV</li></NavLink> 
+                           <NavLink><li>Me Contacter</li></NavLink> 
 
                         </ul>
                     </nav>
