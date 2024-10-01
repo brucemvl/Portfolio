@@ -1,0 +1,191 @@
+export const projets =
+    [
+        {
+            "id": "1",
+            "title": "Booki",
+            "cover": "../assets/images/booki.png",
+            "pictures": [
+
+            ],
+            "description": "Création de la page d'accueil d'une agence de voyage en utilisant HTML et CSS et en integrant une interface responsive",
+            "technologies": [
+                {
+                    "nom": "HTML & CSS",
+                    "logo": "../assets/logos/htmlcss.png"
+                }
+
+            ],
+            "github": "https://github.com/brucemvl/Projet2.git",
+            "objectifs": [
+                "Implémenter une interface responsive avec HTML et CSS",
+                "Intégrer du contenu conformément à une maquette avec HTML et CSS",
+                "Versionner son projet avec Git et Github",
+                "Installer un environnement de développement front-end"
+            ]
+        },
+        {
+            "id": "2",
+            "title": "Portfolio architecte Sophie Bluel",
+            "cover": "../assets/images/sophie-bluel.png",
+            "pictures": [
+
+            ],
+            "description": "créer une page web dynamique pour le site internet d'une architecte d'intérieur en utilisant JavaScript et en communiquant avec une API",
+            "technologies": [
+                {
+                    "nom": "HTML & CSS",
+                    "logo": "../assets/logos/htmlcss.png"
+                },
+                {
+                    "nom": "Javascript",
+                    "logo": "../assets/logos/javascript.png"
+                }
+
+            ],
+            "github": "https://github.com/brucemvl/Projet3.git",
+            "objectifs": [
+                "Gérer les événements utilisateurs avec JavaScript",
+                "Manipuler les éléments du DOM avec JavaScript",
+                "Récupérer les données utilisateurs dans le JavaScript via des formulaires"
+            ]
+        },
+        {
+            "id": "3",
+            "title": "Photographe Nina Carducci",
+            "cover": "../assets/images/nina.webp",
+            "pictures": [
+
+            ],
+            "description": "Optimiser le référencement d'un site, en ameliorant ses performances et son accesibilité",
+            "technologies": [
+                {
+                    "nom": "HTML & CSS",
+                    "logo": "../assets/logos/htmlcss.png"
+                },
+                {
+                    "nom": "Javascript",
+                    "logo": "../assets/logos/javascript.png"
+                },
+                {
+                    "nom": "Optimisation SEO"
+                }
+
+            ],
+            "github": "https://github.com/brucemvl/Projet4.git",
+            "objectifs": [
+                "Optimiser les performances d’un site web",
+                "Débugger un site web grâce aux Chrome DevTools",
+                "Rédiger un cahier de recette pour tester un site"
+            ]
+        },
+        {
+            "id": "4",
+            "title": "Kasa",
+            "cover": "../assets/images/kasa.png",
+            "pictures": [
+
+            ],
+            "description": "Implémenter le front-end d’une application de location d'appartements en utilisant React et React Router pour créer une expérience utilisateur moderne et réactive",
+            "technologies": [
+                {
+                    "nom": "React",
+                    "logo": "../assets/logos/react.png"
+                },
+                {
+                    "nom": "Sass",
+                    "logo": "../assets/logos/sass.png"
+                }
+
+
+            ],
+            "github": "https://github.com/brucemvl/Projet5.git",
+            "objectifs": [
+                "Initialiser une application avec Create React App",
+                "Configurer la navigation entre les pages de l'application avec React Router",
+                "Développer des éléments de l'interface d'un site web grâce à des composants React",
+                "Mettre en œuvre des animations CSS",
+                "Développer une interface web avec Sass"
+            ]
+        },
+        {
+            "id": "5",
+            "title": "Mon vieux grimoire",
+            "cover": "../assets/images/monvieuxgrimoire.png",
+            "pictures": [
+
+            ],
+            "description": "Développer le back-end d'un site de notation de livres",
+            "technologies": [
+                {
+                    "nom": "MongoDb",
+                    "logo": "../assets/logos/mongodb.png"
+                },
+                {
+                    "nom": "NodeJS",
+                    "logo": "../assets/logos/nodejs.png"
+                }
+
+
+            ],
+            "github": "https://github.com/brucemvl/Projet6.git",
+            "objectifs": [
+                "Implémenter un modèle logique de données conformément à la réglementation",
+                "Mettre en œuvre des opérations CRUD de manière sécurisée",
+                "Stocker des données de manière sécurisée"
+            ]
+        },
+        {
+            "id": "6",
+            "title": "Menu maker by Qwenta",
+            "cover": "../assets/images/qwenta.png",
+            "pictures": [
+
+            ],
+            "description": "Organiser la gestion de projet du developpement d'un site web",
+            "technologies": [
+                {
+                    "nom": "Notion",
+                    "logo": "../assets/logos/notion.png"
+                }
+
+
+            ],
+            "github": "https://github.com/brucemvl/Projet7.git",
+            "objectifs": [
+                "Découper une fonctionnalités en tâches pour préparer le développement",
+                "Mettre en place une méthode de veille technologique",
+                "Présenter la solution technique",
+                "Rédiger les spécifications techniques d'un projet web à partir de besoins fonctionnels",
+                "Suivre le déroulement du projet grâce à un outil de gestion de projet"
+            ]
+        },
+        {
+            "id": "7",
+            "title": "11 sur 10",
+            "cover": "../assets/images/11sur10.png",
+            "pictures": [
+
+            ],
+            "description": "Projet personnel développé en utilisant React dans lequel j'affiche des données footbalistiques (classements, resultats, statistiques...) récupérées via une API",
+            "technologies": [
+                {
+                    "nom": "React",
+                    "logo": "../assets/logos/react.png"
+                },
+                {
+                    "nom": "Sass",
+                    "logo": "../assets/logos/sass.png"
+                }
+
+
+            ],
+            "github": "https://github.com/brucemvl/Appli-Foot.git",
+            "objectifs": [
+                "Configurer la navigation entre les pages de l'application avec React-router",
+                "Récuperer et exploiter des données via une API",
+                "Utilisation de composants réutilisables",
+                "Implementer une interface responsive"
+            ]
+        }
+
+    ]
