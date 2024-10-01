@@ -57,20 +57,33 @@
     height: 3em;
     width: 28em;
     transform: translateX(-100%);
-    background-color: red;
     animation: drop 0.9s ease-in-out;
     position: absolute;
-    margin: 1%;
 
     ul {
         list-style-type: none;
         display: flex;
         gap: 5%;
+
+        a {
+            text-decoration: none;
+            
+           
+
+            li {
+                color: black;
+                transition-duration: 0.5s;
+            transform: scale(1);
+                &:hover {
+                    text-shadow: 0px 0px 10px white;
+                    transform: scale(1.1);            }
+            }
+        }
     }
 }
 
 .inactive {
-    animation: close 0.8s ease-in-out;
+    animation: close 0.9s ease-in-out;
     display: none;
 }
 

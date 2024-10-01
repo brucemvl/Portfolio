@@ -3,11 +3,22 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    font-family: kanit;
+    background: linear-gradient(180deg, #ffffff 0%, rgb(0 0 0 / 0%) 42%, rgb(0 0 0 / 21%) 99.99%, rgb(255 255 255 / 50%) 100%);
+    background-color: lightsteelblue;
+    border-bottom: 10px solid black;
+
+
+
+    .title {
+        margin-inline: 2em;
+    }
 
     .logoAndMenu {
         display: flex;
         flex-direction: column;
         gap: 4em;
+        margin: 1em;
 
         img {
             height: 5em;
