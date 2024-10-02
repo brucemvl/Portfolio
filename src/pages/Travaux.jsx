@@ -3,21 +3,29 @@ import Carte from "../components/Carte"
 import "../styles/Travaux.scss"
 import Filtres from "../components/Filtres"
 
-function Travaux(){
-const techno = projets.map((element)=> element.technologies)
+function Travaux() {
 
-const technos = techno.reduce(
-    (acc, elem) =>
-        acc.includes(elem) ? acc : acc.concat(elem.nom),
+    const tech = projets.reduce(
+        (acc, elem) =>
+            acc.includes(elem.technologies) ? acc : acc.concat(elem.technologies),
         []
-)
-console.log(techno)
-console.log(technos)
+    )
+
+    const techno = tech.map((element) => element.nom)
+
+    const technologies = techno.reduce(
+        (acc, elem) =>
+            acc.includes(elem) ? acc : acc.concat(elem),
+        []
+    )
+
     return (
         <section className="travaux">
-            <Filtres />
-{projets.map(({title, cover})=>
-<Carte title={title} cover={cover}/>)}
+            <Filtres technologies={technologies} />
+            <div className="travaux__cartes">
+                {projets.map(({ title, cover }) =>
+                    <Carte title={title} cover={cover} key={"projet" + title} />)}
+            </div>
         </section>
     )
 }

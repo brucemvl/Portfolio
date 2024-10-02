@@ -1,7 +1,13 @@
-function Filtres(){
+function Filtres({technologies}){
 
     return (
-        <nav></nav>
+        <nav>
+            <ul className="filtres">
+                {technologies.map((element)=>
+                <li key={element}>{element}</li>
+                )}
+            </ul>
+        </nav>
     )
 
 }

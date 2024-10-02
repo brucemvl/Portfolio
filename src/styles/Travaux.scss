@@ -1,7 +1,42 @@
 .travaux {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 3%;
+    flex-direction: column;
     font-family: kanit;
+
+    .filtres {
+        display: flex;
+        list-style-type: none;
+        gap: 2%;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-inline-start: 0;
+
+    li {
+        border: 4px solid;
+        border-radius: 10px;
+        padding-inline: 1%;
+        color: steelblue;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 9em;
+        height: 2em;
+        margin-block: 5px;
+        transition-duration: 0.4s;
+
+        &:hover {
+            background-color: steelblue;
+            cursor: pointer;
+            color: white;
+        }
+    }
+    }
+
+    .travaux__cartes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3%;
+        }
 }
