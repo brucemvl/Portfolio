@@ -32,8 +32,8 @@ function Menu() {
                         <ul>
                            <NavLink to={"/"}><li>Présentation</li></NavLink> 
                            <NavLink to={"/travaux"}><li>Mes Travaux</li></NavLink> 
-                           <NavLink><li>Mon CV</li></NavLink> 
-                           <NavLink><li>Me Contacter</li></NavLink> 
+                           <NavLink to={"/cv"} ><li>Mon CV</li></NavLink> 
+                           <NavLink to={"/contact"}><li>Me Contacter</li></NavLink> 
 
                         </ul>
                     </nav>

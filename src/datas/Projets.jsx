@@ -1,9 +1,18 @@
+import booki from "../assets/images/booki.png"
+import bluel from "../assets/images/sophie-bluel.png"
+import nina from "../assets/images/nina.webp"
+import kasa from "../assets/images/kasa.png"
+import monvieuxgrimoire from "../assets/images/monvieuxgrimoire.png"
+import qwenta from "../assets/images/qwenta.png"
+import onze from "../assets/images/11sur10.png"
+
+
 export const projets =
     [
         {
             "id": "1",
             "title": "Booki",
-            "cover": "../assets/images/booki.png",
+            "cover": booki,
             "pictures": [
 
             ],
@@ -26,7 +35,7 @@ export const projets =
         {
             "id": "2",
             "title": "Portfolio architecte Sophie Bluel",
-            "cover": "../assets/images/sophie-bluel.png",
+            "cover": bluel,
             "pictures": [
 
             ],
@@ -52,7 +61,7 @@ export const projets =
         {
             "id": "3",
             "title": "Photographe Nina Carducci",
-            "cover": "../assets/images/nina.webp",
+            "cover": nina,
             "pictures": [
 
             ],
@@ -81,7 +90,7 @@ export const projets =
         {
             "id": "4",
             "title": "Kasa",
-            "cover": "../assets/images/kasa.png",
+            "cover": kasa,
             "pictures": [
 
             ],
@@ -110,7 +119,7 @@ export const projets =
         {
             "id": "5",
             "title": "Mon vieux grimoire",
-            "cover": "../assets/images/monvieuxgrimoire.png",
+            "cover": monvieuxgrimoire,
             "pictures": [
 
             ],
@@ -137,7 +146,7 @@ export const projets =
         {
             "id": "6",
             "title": "Menu maker by Qwenta",
-            "cover": "../assets/images/qwenta.png",
+            "cover": qwenta,
             "pictures": [
 
             ],
@@ -162,7 +171,7 @@ export const projets =
         {
             "id": "7",
             "title": "11 sur 10",
-            "cover": "../assets/images/11sur10.png",
+            "cover": onze,
             "pictures": [
 
             ],
