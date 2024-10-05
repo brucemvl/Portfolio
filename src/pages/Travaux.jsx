@@ -3,6 +3,7 @@ import Carte from "../components/Carte"
 import "../styles/Travaux.scss"
 import Filtres from "../components/Filtres"
 import { useState } from "react"
+import { Link } from "react-router-dom"
 
 function Travaux() {
 
@@ -30,7 +31,7 @@ function Travaux() {
             <h2>Projets réalisés</h2>
             <Filtres technologies={technologies} setFilter={setFilter} />
             <div className="travaux__cartes">
-                {projets.map(({ title, cover, technologies }) => {
+                {projets.map(({ title, cover, technologies, id }) => {
                     // Aplatir les technologies du projet
                     const nomsTechnologies = technologies.flatMap(sousTableau => sousTableau).map(objet => objet.nom);
 
@@ -38,7 +39,7 @@ function Travaux() {
                     const matchesFilter = !filter || nomsTechnologies.includes(filter);
 
                     return matchesFilter ? (
-                        <Carte title={title} cover={cover} key={"projet" + title} />
+                        <Link to={`/fiche/${id}`} ><Carte title={title} cover={cover} key={"projet" + title} /></Link>
                     ) : null;
                 })}
             </div>
