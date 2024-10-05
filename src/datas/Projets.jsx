@@ -5,6 +5,19 @@ import kasa from "../assets/images/kasa.png"
 import monvieuxgrimoire from "../assets/images/monvieuxgrimoire.png"
 import qwenta from "../assets/images/qwenta.png"
 import onze from "../assets/images/11sur10.png"
+import htmlcss from "../assets/logos/htmlcss.png"
+import javascript from "../assets/logos/javascript.png"
+import react from "../assets/logos/react.png"
+import sass from "../assets/logos/sass.png"
+import mongodb from "../assets/logos/mongodb.png"
+import nodejs from "../assets/logos/nodejs.png"
+import notion from "../assets/logos/notion.png"
+
+
+
+
+
+
 
 
 export const projets =
@@ -20,7 +33,7 @@ export const projets =
             "technologies": [
                 {
                     "nom": "HTML & CSS",
-                    "logo": "../assets/logos/htmlcss.png"
+                    "logo": htmlcss
                 }
 
             ],
@@ -43,11 +56,11 @@ export const projets =
             "technologies": [
                 {
                     "nom": "HTML & CSS",
-                    "logo": "../assets/logos/htmlcss.png"
+                    "logo": htmlcss
                 },
                 {
                     "nom": "Javascript",
-                    "logo": "../assets/logos/javascript.png"
+                    "logo": javascript
                 }
 
             ],
@@ -69,15 +82,15 @@ export const projets =
             "technologies": [
                 {
                     "nom": "HTML & CSS",
-                    "logo": "../assets/logos/htmlcss.png"
+                    "logo": htmlcss
                 },
                 {
                     "nom": "Javascript",
-                    "logo": "../assets/logos/javascript.png"
+                    "logo": javascript
                 },
                 {
                     "nom": "Optimisation SEO",
-                    "logo": "null"
+                    "logo": null
                 }
 
             ],
@@ -99,11 +112,11 @@ export const projets =
             "technologies": [
                 {
                     "nom": "React",
-                    "logo": "../assets/logos/react.png"
+                    "logo": react
                 },
                 {
                     "nom": "Sass",
-                    "logo": "../assets/logos/sass.png"
+                    "logo": sass
                 }
 
 
@@ -128,11 +141,11 @@ export const projets =
             "technologies": [
                 {
                     "nom": "MongoDb",
-                    "logo": "../assets/logos/mongodb.png"
+                    "logo": mongodb
                 },
                 {
                     "nom": "NodeJS",
-                    "logo": "../assets/logos/nodejs.png"
+                    "logo": nodejs
                 }
 
 
@@ -155,7 +168,7 @@ export const projets =
             "technologies": [
                 {
                     "nom": "Notion",
-                    "logo": "../assets/logos/notion.png"
+                    "logo": notion
                 }
 
 
@@ -180,11 +193,11 @@ export const projets =
             "technologies": [
                 {
                     "nom": "React",
-                    "logo": "../assets/logos/react.png"
+                    "logo": react
                 },
                 {
                     "nom": "Sass",
-                    "logo": "../assets/logos/sass.png"
+                    "logo": sass
                 }
 
 
