@@ -10,6 +10,7 @@
     border-radius: 15px;
     background: linear-gradient(180deg, #ffffff 0%, rgba(0, 0, 0, 0) 42%, rgba(0, 0, 0, 0.21) 99.99%, rgba(255, 255, 255, 0.5) 100%);
     background-color: lightsteelblue;
+    animation: fade 1s ease-in-out;
 
 
     .carte__title {
@@ -21,4 +22,15 @@
         height: 7em;
         object-fit: contain;
     }
+}
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+    
 }

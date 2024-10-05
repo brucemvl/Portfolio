@@ -25,7 +25,9 @@ function Travaux() {
 
 
     return (
+        <div className="blocpage">
         <section className="travaux">
+            <h2>Projets réalisés</h2>
             <Filtres technologies={technologies} setFilter={setFilter} />
             <div className="travaux__cartes">
                 {projets.map(({ title, cover, technologies }) => {
@@ -41,6 +43,7 @@ function Travaux() {
                 })}
             </div>
         </section>
+        </div>
     );
 }
 
