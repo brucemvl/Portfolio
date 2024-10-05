@@ -76,7 +76,8 @@ export const projets =
                     "logo": "../assets/logos/javascript.png"
                 },
                 {
-                    "nom": "Optimisation SEO"
+                    "nom": "Optimisation SEO",
+                    "logo": "null"
                 }
 
             ],
