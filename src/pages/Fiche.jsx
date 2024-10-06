@@ -53,7 +53,20 @@ function Fiche() {
                         </ul>
                     </aside>
                     </div>
-                    : <img src={projet.cover} />
+                    : <div className="fiche__complete">
+                        <article className="fiche__images">
+                            <h2>Projet en images</h2>
+                            <div>
+            {projet.pictures && projet.pictures.length > 0 ? (
+                projet.pictures.map((picture, index) => (
+                    <img src={picture} alt={`Capture d'ecran du projet ${index + 1}`} key={index} />
+                ))
+            ) : (
+                <p>Aucune image disponible pour ce projet.</p>
+            )}
+        </div>
+    </article>
+</div>
                 }
 
             </section>

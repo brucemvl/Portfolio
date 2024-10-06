@@ -1,25 +1,5 @@
-import booki from "../assets/images/booki.png"
-import bluel from "../assets/images/sophie-bluel.png"
-import nina from "../assets/images/nina.webp"
-import kasa from "../assets/images/kasa.png"
-import monvieuxgrimoire from "../assets/images/monvieuxgrimoire.png"
-import qwenta from "../assets/images/qwenta.png"
-import onze from "../assets/images/11sur10.png"
-import htmlcss from "../assets/logos/htmlcss.png"
-import javascript from "../assets/logos/javascript.png"
-import react from "../assets/logos/react.png"
-import sass from "../assets/logos/sass.png"
-import mongodb from "../assets/logos/mongodb.png"
-import nodejs from "../assets/logos/nodejs.png"
-import notion from "../assets/logos/notion.png"
-import seo from "../assets/logos/seo.png"
-
-
-
-
-
-
-
+import booki from "../assets/images/booki.png"; import bluel from "../assets/images/sophie-bluel.png"; import nina from "../assets/images/nina.webp"; import kasa from "../assets/images/kasa.png"; import monvieuxgrimoire from "../assets/images/monvieuxgrimoire.png"; import qwenta from "../assets/images/qwenta.png"; import onze from "../assets/images/11sur10.png"; import htmlcss from "../assets/logos/htmlcss.png"; import javascript from "../assets/logos/javascript.png"; import react from "../assets/logos/react.png"; import sass from "../assets/logos/sass.png"; import mongodb from "../assets/logos/mongodb.png"; import nodejs from "../assets/logos/nodejs.png"; import notion from "../assets/logos/notion.png"; import seo from "../assets/logos/seo.png"
+import bookidesktop from "../assets/images/booki/bookidesktop.png"; import bookitablette from "../assets/images/booki/bookitablette.png"; import bookimobile1 from "../assets/images/booki/bookimobile1.png"; import bookimobile2 from "../assets/images/booki/bookimobile2.png"
 
 export const projets =
     [
@@ -28,6 +8,11 @@ export const projets =
             "title": "Booki",
             "cover": booki,
             "pictures": [
+                bookidesktop,
+                bookitablette,
+                bookimobile1,
+                bookimobile2
+
 
             ],
             "description": "Création de la page d'accueil d'une agence de voyage en utilisant HTML et CSS et en integrant une interface responsive",
