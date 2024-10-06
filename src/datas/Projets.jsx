@@ -12,6 +12,7 @@ import sass from "../assets/logos/sass.png"
 import mongodb from "../assets/logos/mongodb.png"
 import nodejs from "../assets/logos/nodejs.png"
 import notion from "../assets/logos/notion.png"
+import seo from "../assets/logos/seo.png"
 
 
 
@@ -90,7 +91,7 @@ export const projets =
                 },
                 {
                     "nom": "Optimisation SEO",
-                    "logo": null
+                    "logo" : seo
                 }
 
             ],
@@ -175,7 +176,7 @@ export const projets =
             ],
             "github": "https://github.com/brucemvl/Projet7.git",
             "objectifs": [
-                "Découper une fonctionnalités en tâches pour préparer le développement",
+                "Découper une fonctionnalité en tâches pour préparer le développement",
                 "Mettre en place une méthode de veille technologique",
                 "Présenter la solution technique",
                 "Rédiger les spécifications techniques d'un projet web à partir de besoins fonctionnels",

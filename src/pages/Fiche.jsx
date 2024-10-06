@@ -32,17 +32,27 @@ function Fiche() {
                 </ul>
                 </nav>
                 {description ?
+                <div className="fiche__complete">
                     <article className="fiche__description">
                         <h2>{projet.title}</h2>
                         <img src={projet.cover} className="fiche__cover" alt="fiche cover" />
                         <div className="fiche__technologies">
                             {projet.technologies.flatMap(sousTableau => sousTableau).map(element => <div className="techno">
                                 <img src={element.logo} alt="logo technologies" />
-                                <h3>{element.nom}</h3>
+                                <h4>{element.nom}</h4>
                             </div>)
                             }
                         </div>
+                        <p>{projet.description}</p>
                     </article>
+                    <aside>
+                        <h3>Competences acquises</h3>
+                        <ul>
+                        {projet.objectifs.flatMap(sousTableau=> sousTableau).map(element => 
+                        <li>{element}</li>)}
+                        </ul>
+                    </aside>
+                    </div>
                     : <img src={projet.cover} />
                 }
 
