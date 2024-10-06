@@ -14,32 +14,36 @@
             gap: 1em;
             justify-content: center;
 
-        article {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 1em;
-            background-color: #c4e7f9;
-    border-radius: 15px;
-    width: 75%;
-
-            .fiche__cover {
-                width: 55%;
-            }
-
-            .fiche__technologies {
+            article {
                 display: flex;
-                gap: 6em;
+                flex-direction: column;
+                align-items: center;
+                gap: 1em;
+                background-color: #c4e7f9;
+                border-radius: 15px;
+                width: 75%;
 
-                .techno {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-
-                    img {
-                        height: 6em;
-                    }
+                h2 {
+                    font-size: 1.3em;
                 }
+
+                .fiche__cover {
+                    width: 65%;
+                }
+
+                .fiche__technologies {
+                    display: flex;
+                    gap: 6em;
+
+                    .techno {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        img {
+                            height: 6em;
+                        }
+                    }
                 }
 
                 p {
@@ -52,7 +56,7 @@
             .fiche__images {
                 width: 85%;
                 padding-block: 1em;
-                
+
                 div {
                     display: flex;
                     flex-wrap: wrap;
@@ -60,28 +64,28 @@
                     gap: 1em;
                     align-items: flex-start;
 
-                img {
-                    width: 30%;
+                    img {
+                        width: 30%;
+                    }
                 }
-            }
             }
 
             aside {
                 display: flex;
                 flex-direction: column;
-            align-items: center;
-            background-color: #c4e7f9;
-    border-radius: 15px;
-    width: 25%;
-    padding-inline: 2%;
+                align-items: center;
+                background-color: #c4e7f9;
+                border-radius: 15px;
+                width: 25%;
+                padding-inline: 2%;
 
-    ul {
-        padding-inline-start: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-                    }
+                ul {
+                    padding-inline-start: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                }
+            }
         }
 
         .fiche__selecteur {
@@ -122,4 +126,63 @@
 
 .img {
     border-radius: 0px 5px 5px 0px;
+}
+
+@media (max-width: 767px) {
+
+    .bloc {
+        .fiche {
+            width: 95%;
+
+            .fiche__complete {
+                flex-direction: column;
+
+                article {
+                    width: 100%;
+
+                    .fiche__technologies {
+                        gap: 3em;
+                        padding-inline: 5px;
+
+                        .techno {
+
+                            img {
+                                height: 4em;
+                            }
+
+                            h4 {
+                                font-size: 0.8em;
+                            }
+                        }
+                    }
+
+                    p {
+                        width: 75%;
+                    }
+                }
+
+                aside {
+                    width: 96%;
+                }
+
+                .fiche__images {
+                    width: 100%;
+                    padding-block: 1em;
+
+                    div {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1em;
+                        align-items: center;
+                        gap: 2em;
+
+                        img {
+                            width: 90%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 }
