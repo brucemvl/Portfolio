@@ -61,3 +61,38 @@ a {
     text-decoration: none;
     color: black;
 }
+
+@media (max-width: 1024px){
+    .carte {
+        width: 10em;
+        height: 12em;
+
+        .carte__cover {
+            height: 5.5em;
+        }
+    }
+}
+
+@media (max-width: 767px){
+    .blocpage {
+    .travaux {
+width: 90%;
+
+.filtres {
+
+    li {
+        font-size: 0.85em;
+        font-weight: 500;
+        width: 8em;
+    }
+}
+    
+    .carte {
+
+        .carte__cover {
+            height: 4.5em;
+        }
+    }
+}
+    }
+}

@@ -32,9 +32,7 @@ function Menu() {
                         <ul>
                            <NavLink to={"/"}><li>Présentation</li></NavLink> 
                            <NavLink to={"/travaux"}><li>Mes Travaux</li></NavLink> 
-                           <NavLink to={"/cv"} ><li>Mon CV</li></NavLink> 
                            <NavLink to={"/contact"}><li>Me Contacter</li></NavLink> 
-
                         </ul>
                     </nav>
                 </div>

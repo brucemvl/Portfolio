@@ -23,3 +23,23 @@ header {
         }
     }
 }
+
+@media (max-width: 767px){
+    header {
+
+        h1
+{
+    font-size: 1.5em;
+} 
+h2 {
+    font-size: 1.1em;
+}   
+.logoAndMenu {
+    justify-content: space-between;
+
+    img {
+        height: 4em;
+    }
+}    
+    }
+}
