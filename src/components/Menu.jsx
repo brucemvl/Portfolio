@@ -30,9 +30,9 @@ function Menu() {
                     </div>
                     <nav className="menu">
                         <ul>
-                           <NavLink to={"/"}><li>Présentation</li></NavLink> 
-                           <NavLink to={"/travaux"}><li>Mes Travaux</li></NavLink> 
-                           <NavLink to={"/contact"}><li>Me Contacter</li></NavLink> 
+                           <NavLink to="/home"><li>Présentation</li></NavLink> 
+                           <NavLink to="/travaux"><li>Mes Travaux</li></NavLink> 
+                           <NavLink to="/contact"><li>Me Contacter</li></NavLink> 
                         </ul>
                     </nav>
                 </div>

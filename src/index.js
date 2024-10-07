@@ -1,12 +1,11 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Home from './pages/Home.jsx'
-import Header from './components/Header.jsx'
-import Travaux from './pages/Travaux.jsx'
-import Fiche from './pages/Fiche.jsx'
-import Footer from './components/Footer.jsx'
-
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home.jsx';
+import Header from './components/Header.jsx';
+import Travaux from './pages/Travaux.jsx';
+import Fiche from './pages/Fiche.jsx';
+import Footer from './components/Footer.jsx';
 
 ReactDOM.render(
     <React.StrictMode>
@@ -21,5 +20,4 @@ ReactDOM.render(
         </Router>
     </React.StrictMode>,
     document.getElementById('root')
-
-)
+);

@@ -1,6 +1,7 @@
 import "../styles/Footer.scss"
 import github from "../assets/logos/github.png"
 import linkedin from "../assets/logos/linkedin2.png"
+import React from "react"
 
 function Footer() {
 
