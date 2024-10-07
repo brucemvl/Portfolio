@@ -1,6 +1,7 @@
-import booki from "../assets/images/booki.png"; import bluel from "../assets/images/sophie-bluel.png"; import nina from "../assets/images/nina.webp"; import kasa from "../assets/images/kasa.png"; import monvieuxgrimoire from "../assets/images/monvieuxgrimoire.png"; import qwenta from "../assets/images/qwenta.png"; import onze from "../assets/images/11sur10.png"; import htmlcss from "../assets/logos/htmlcss.png"; import javascript from "../assets/logos/javascript.png"; import react from "../assets/logos/react.png"; import sass from "../assets/logos/sass.png"; import mongodb from "../assets/logos/mongodb.png"; import nodejs from "../assets/logos/nodejs.png"; import notion from "../assets/logos/notion.png"; import seo from "../assets/logos/seo.png"
+import booki from "../assets/images/booki.png"; import bluel from "../assets/images/sophie-bluel.png"; import nina from "../assets/images/nina.webp"; import kasa from "../assets/images/kasa.png"; import monvieuxgrimoire from "../assets/images/monvieuxgrimoire.png"; import qwenta from "../assets/images/qwenta.png"; import onze from "../assets/images/11sur10.png"; import htmlcss from "../assets/logos/htmlcss.png"; import javascript from "../assets/logos/javascript.png"; import react from "../assets/logos/react.png"; import sass from "../assets/logos/sass.png"; import mongodb from "../assets/logos/mongodb.png"; import nodejs from "../assets/logos/nodejs.png"; import notion from "../assets/logos/notion.png"; import seo from "../assets/logos/seo.png"; import express from "../assets/logos/express.png"; import github from "../assets/logos/github.png"; import figma from "../assets/logos/figma.png"
 import bookidesktop from "../assets/images/booki/bookidesktop.png"; import bookitablette from "../assets/images/booki/bookitablette.png"; import bookimobile1 from "../assets/images/booki/bookimobile1.png"; import bookimobile2 from "../assets/images/booki/bookimobile2.png"; import bluel1 from "../assets/images/bluel/bluel1.png"; import bluel2 from "../assets/images/bluel/bluel2.png"; import bluel3 from "../assets/images/bluel/bluel3.png"; import bluel4 from "../assets/images/bluel/bluel4.png"; import bluel5 from "../assets/images/bluel/bluel5.png"; import nina1 from "../assets/images/nina/nina1.png"; import nina2 from "../assets/images/nina/nina2.png"; import nina3 from "../assets/images/nina/nina3.png"; import nina4 from "../assets/images/nina/nina4.png"; import nina5 from "../assets/images/nina/nina5.png"
 import kasa1 from "../assets/images/kasa/kasa1.png"; import kasa2 from "../assets/images/kasa/kasa2.png"; import kasa3 from "../assets/images/kasa/kasa3.png"; import kasa4 from "../assets/images/kasa/kasa4.png"
+
 export const projets =
     [
         {
@@ -206,4 +207,59 @@ export const projets =
             ]
         }
 
+    ]
+
+    export const frontend = [
+        
+            {
+                "nom": "HTML & CSS",
+                "logo": htmlcss
+            },
+            {
+                "nom": "Javascript",
+                "logo": javascript
+
+            },
+            {
+                "nom": "React",
+                "logo": react
+            },
+            {
+                "nom": "Sass",
+                "logo": sass
+            }        
+    ]
+
+    export const backend = [
+        {
+            "nom": "MongoDB",
+                "logo": mongodb
+        },
+        {
+            "nom": "NodeJS",
+                "logo": nodejs
+        },
+        {
+            "nom": "express",
+                "logo": express
+        }
+    ]
+
+    export const outils = [
+        {
+            "nom": "Github",
+            "logo": github
+        },
+        {
+            "nom": "Figma",
+            "logo": figma
+        },
+        {
+        "nom": "Notion",
+            "logo": notion
+        },
+        {
+            "nom": "Optimisation SEO",
+            "logo": seo
+        }
     ]

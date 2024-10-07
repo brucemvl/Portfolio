@@ -1,0 +1,139 @@
+.blocp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 2%;
+
+    .presentation {
+        font-family: kanit;
+        margin-block: 3em;
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+
+        article {
+            display: flex;
+            background-color: #c4e7f9;
+            align-items: center;
+            padding: 2em;
+            border-radius: 15px;
+
+
+            img {
+                height: 12em;
+                width: 11em;
+                border-radius: 20%;
+                transform: translateX(-110px);
+                border: 5px solid white;
+            }
+
+            p {
+                font-size: 1.5em;
+
+                span {
+                    font-weight: bold;
+                }
+            }
+
+        }
+
+        aside {
+            display: flex;
+            background-color: #c4e7f9;
+            align-items: center;
+            padding: 2em;
+            border-radius: 15px;
+            flex-direction: column;
+            gap: 1.5em;
+
+            .technos {
+                display: flex;
+                flex-direction: column;
+                gap: 1em;
+                width: 90%;
+
+                div {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    ul {
+                        display: flex;
+                        gap: 12%;
+                        width: 75%;
+                        padding-inline-start: 0;
+
+                        li {
+                            display: flex;
+                            width: 6em;
+                            height: 6em;
+                            list-style-type: none;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: flex-end;
+
+                            img {
+                                width: 5em;
+                                height: 4.5em;
+                            }
+
+                            h5 {
+                                margin-top: 2px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width : 1024px){
+    .blocp {
+
+        .presentation {
+
+            article {
+
+                p{
+                    font-size: 1.2em;
+                }
+            }
+
+            aside {
+
+                .technos {
+
+                    div {
+
+                        h4 {
+                            font-size: 0.8em;
+                        }
+
+                        ul {
+
+                            li {
+
+                                width: 5em;
+                                height: 5em;
+
+                                img {
+
+                                    width: 4em;
+                                    height: 3.5em;
+
+                                }
+
+                                h5 {
+                                    font-size: 0.7em;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
