@@ -2,6 +2,7 @@
 
     display: flex;
     justify-content: center;
+    margin-bottom: 2em;
 
     .travaux {
         display: flex;
@@ -47,7 +48,6 @@
             flex-wrap: wrap;
             justify-content: center;
             gap: 3%;
-            background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 42%, rgba(0, 0, 0, 0.21) 99.99%, rgba(255, 255, 255, 0.5) 100%);
             background-color: steelblue;
             border-radius: 15px;
             padding-block: 2em;
