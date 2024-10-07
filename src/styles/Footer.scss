@@ -8,4 +8,55 @@ footer {
     color: white;
     justify-items: center;
 
+    section {
+        display: flex;
+        flex-direction: column;
+
+        div {
+
+            a {
+                color: white;
+            }
+
+            img {
+                height: 3em;
+                width: 3em;
+                filter: invert(1);
+            }
+        }
+    }
+
+}
+
+@media (max-width: 767px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+
+        section {
+            gap: 30%;
+            width: 85%;
+            flex-direction: row;
+            align-items: center;
+
+            .reseaux {
+                gap: 1em;
+            }
+
+            .droits {
+                font-size: 0.8em;
+            }
+
+            div {
+                display: flex;
+
+                img {
+                    height: 2em;
+                    width: 2em;
+                }
+            }
+        }
+    }
 }
