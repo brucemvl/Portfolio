@@ -37,7 +37,7 @@ function Home(){
                                 </ul>
                         </div>
                         <div className="outils">
-                        <h4>Outils de developpement</h4>
+                        <h4>Outils de dev</h4>
                         <ul>
                             {outils.map((element) => <li>
                                 <img src={element.logo} alt="logo"/>

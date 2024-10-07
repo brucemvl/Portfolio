@@ -136,6 +136,7 @@
     .menu {
         width: 17em;
         transform: translateX(-100%) translateY(-30px);
+        animation: drop2 0.8s ease-in-out;
 
         ul {
             gap: 3%;
@@ -146,4 +147,20 @@
             }
         }
     }
+}
+
+@keyframes drop2 {
+    0% {
+        transform: translateX(90%) translateY(-30px);
+        opacity: 0;
+
+    }
+
+    50% {
+
+        opacity: 0;
+
+    }
+
+
 }
