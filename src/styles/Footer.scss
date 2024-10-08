@@ -13,6 +13,11 @@ footer {
         flex-direction: column;
         align-items: center;
 
+        .reseaux {
+            display: flex;
+            gap: 2em;
+        }
+
         div {
 
             a {
@@ -43,7 +48,7 @@ footer {
             align-items: center;
 
             .reseaux {
-                gap: 1em;
+                gap: 1.5em;
             }
 
             .droits {

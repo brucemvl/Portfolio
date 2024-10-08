@@ -35,10 +35,10 @@ function Fiche() {
                 <div className="fiche__complete">
                     <article className="fiche__description">
                         <h2>{projet.title}</h2>
-                        <img src={projet.cover} className="fiche__cover" alt="fiche cover" />
+                        <img src={projet.cover} className="fiche__cover" alt={`cover ${projet.title}`} />
                         <div className="fiche__technologies">
                             {projet.technologies.flatMap(sousTableau => sousTableau).map(element => <div className="techno">
-                                <img src={element.logo} alt="logo technologies" />
+                                <img src={element.logo} alt={`logo ${element.nom}`} />
                                 <h4>{element.nom}</h4>
                             </div>)
                             }

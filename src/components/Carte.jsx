@@ -5,7 +5,7 @@ function Carte({title, cover}){
 return (
     <div className="carte">
         <h4 className="carte__title">{title}</h4>
-        <img src={cover} alt="cover projet" className="carte__cover" />
+        <img src={cover} alt={`cover ${title}`} className="carte__cover" />
     </div>
 )
 }

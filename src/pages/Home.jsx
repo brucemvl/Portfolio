@@ -22,7 +22,7 @@ function Home(){
                             <h4>Frontend</h4>
                             <ul>
                             {frontend.map((element) => <li>
-                                <img src={element.logo} alt="logo" />
+                                <img src={element.logo} alt={`logo ${element.nom}`} />
                                 <h5>{element.nom}</h5>
                                 </li>)}
                                 </ul>
@@ -31,7 +31,7 @@ function Home(){
                             <h4>Backend</h4>
                             <ul>
                             {backend.map((element) => <li>
-                                <img src={element.logo} alt="logo"/>
+                                <img src={element.logo} alt={`logo ${element.nom}`}/>
                                 <h5>{element.nom}</h5>
                                 </li>)}
                                 </ul>
@@ -40,7 +40,7 @@ function Home(){
                         <h4>Outils de dev</h4>
                         <ul>
                             {outils.map((element) => <li>
-                                <img src={element.logo} alt="logo"/>
+                                <img src={element.logo} alt={`logo ${element.nom}`}/>
                                 <h5>{element.nom}</h5>
                                 </li>)}
                                 </ul>
