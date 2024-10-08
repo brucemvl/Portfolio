@@ -44,6 +44,7 @@ function Fiche() {
                             }
                         </div>
                         <p>{projet.description}</p>
+                        <a href={projet.github}>Lien vers le code sur Github</a>
                     </article>
                     <aside>
                         <h3>Competences acquises</h3>
