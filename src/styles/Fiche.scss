@@ -129,6 +129,32 @@
     border-radius: 0px 5px 5px 0px;
 }
 
+@media (max-width: 1024px){
+
+    .bloc {
+        .fiche {
+
+            .fiche__complete {
+
+                article {
+                    width: 70%;
+
+
+                }
+
+                aside {
+
+                    width: 30%;
+
+                    h3 {
+                        font-size: 1.05em;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 767px) {
 
     .bloc {
@@ -164,6 +190,10 @@
 
                 aside {
                     width: 96%;
+
+                    h3 {
+                        font-size: 1.17em;
+                    }
                 }
 
                 .fiche__images {

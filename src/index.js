@@ -6,6 +6,7 @@ import Header from './components/Header.jsx';
 import Travaux from './pages/Travaux.jsx';
 import Fiche from './pages/Fiche.jsx';
 import Footer from './components/Footer.jsx';
+import Contact from './pages/Contact.jsx';
 
 ReactDOM.render(
     <React.StrictMode>
@@ -15,6 +16,7 @@ ReactDOM.render(
                 <Route path="/" element={<Home />} />
                 <Route path="/travaux" element={<Travaux />} />
                 <Route path='/fiche/:id' element={<Fiche />} />
+                <Route path='/contact' element={<Contact />} />
             </Routes>
             <Footer />
         </Router>

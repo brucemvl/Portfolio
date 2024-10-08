@@ -1,0 +1,34 @@
+.contact {
+    font-family: kanit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(0deg, #abdee6 0%, rgb(0 0 0 / 0%) 42%, rgb(255 255 255 / 21%) 99.99%, rgba(255, 255, 255, 0.5) 100%);
+    background-color: steelblue;
+    width: 70%;
+    margin-inline-start: 15%;
+    margin-block: 3em;
+    border-radius: 10px;
+
+    div {
+        display: flex;
+        width: 50%;
+        font-size: 2em;
+        align-items: center;
+        justify-content: center;
+        gap: 8%;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .contact {
+        width: 88%;
+        margin-inline-start: 6%;
+
+        div {
+            font-size: 1.25em;
+            gap: 7%;
+        }
+    }
+}
