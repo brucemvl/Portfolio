@@ -39,6 +39,7 @@
 
         }
 
+
         aside {
             display: flex;
             background-color: #c4e7f9;
@@ -97,8 +98,28 @@
                 }
             }
         }
+        .onze{
+                        padding: 4em;
+                        display: flex;
+                        flex-direction: row-reverse;
+                        align-items: center;
+
+                        p{
+                            font-size: 1.2em;
+                            padding: 2em;
+                            
+                        }
+
+                        img{
+                            height: 26em;
+                            width: 15em;
+                        }
+
+        }
     }
+
 }
+
 
 @media (max-width : 1024px) {
     .blocp {
@@ -145,7 +166,17 @@
                     }
                 }
             }
-
+.onze{
+    padding: 2em;
+    p{
+        font-size: 1em;
+        padding: 1em;
+    }
+    img{
+        height: 18em;
+        width: 10em;
+    }
+}
         }
     }
 }
