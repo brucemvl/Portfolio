@@ -226,6 +226,7 @@
                             width:"";
                             padding-inline: 3%;
                         }
+                        
 
                         ul {
                             width: 90%;
@@ -253,6 +254,20 @@
                     }
                 }
             }
+
+            .onze{
+    padding: 1em;
+    flex-direction: column-reverse;
+    p{
+        font-size: 0.9em;
+        padding: 1em;
+        text-align: center;
+    }
+    img{
+        height: 14em;
+        width: 7em;
+    }
+}
 
         }
     }
