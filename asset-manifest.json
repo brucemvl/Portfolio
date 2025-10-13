@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.4c697c5b.css",
-    "main.js": "/Portfolio/static/js/main.8239afe8.js",
-    "static/media/onze3.png": "/Portfolio/static/media/onze3.2dd6f54ae50c7af4b913.png",
-    "static/media/onze1.png": "/Portfolio/static/media/onze1.e295efc2d535e19d88ca.png",
-    "static/media/onze2.png": "/Portfolio/static/media/onze2.6108408ccb912acef10c.png",
-    "static/media/onze4.png": "/Portfolio/static/media/onze4.e475432acb69bfeadf2c.png",
+    "main.css": "/Portfolio/static/css/main.3ab03e81.css",
+    "main.js": "/Portfolio/static/js/main.aefd874e.js",
+    "static/media/onze2.png": "/Portfolio/static/media/onze2.648e82bc09338ec18ba7.png",
+    "static/media/onze1.png": "/Portfolio/static/media/onze1.f4079cbfd41b987588f2.png",
+    "static/media/onze3.png": "/Portfolio/static/media/onze3.e556a4b1060b53470635.png",
+    "static/media/onze4.png": "/Portfolio/static/media/onze4.6a31ed8e140297392146.png",
+    "static/media/sanstitre.jpg": "/Portfolio/static/media/sanstitre.e70d9a630cc3d17ba5d0.jpg",
     "static/media/sophie-bluel.png": "/Portfolio/static/media/sophie-bluel.eef7223885c90b7a31c3.png",
     "static/media/nina.png": "/Portfolio/static/media/nina.a8be6a8974fab072c16f.png",
     "static/media/seo.png": "/Portfolio/static/media/seo.0732986a09a7c7ca313c.png",
     "static/media/sass.png": "/Portfolio/static/media/sass.c556a176a8b7d49fb670.png",
     "static/media/bookimobile2.png": "/Portfolio/static/media/bookimobile2.57637c9b7b076822195d.png",
+    "static/media/reactnative.png": "/Portfolio/static/media/reactnative.8439a68744803bf68e11.png",
     "static/media/bookidesktop.webp": "/Portfolio/static/media/bookidesktop.b68748ee14807493c030.webp",
     "static/media/bruce.jpg": "/Portfolio/static/media/bruce.60a2486bb9bf81abaf8c.jpg",
     "static/media/bookimobile1.png": "/Portfolio/static/media/bookimobile1.f2ed40ecd4465651526c.png",
@@ -45,11 +47,11 @@
     "static/media/bluel2.webp": "/Portfolio/static/media/bluel2.2031c0305136908425ad.webp",
     "static/media/qwenta2.webp": "/Portfolio/static/media/qwenta2.c50aed99b4922f49448c.webp",
     "index.html": "/Portfolio/index.html",
-    "main.4c697c5b.css.map": "/Portfolio/static/css/main.4c697c5b.css.map",
-    "main.8239afe8.js.map": "/Portfolio/static/js/main.8239afe8.js.map"
+    "main.3ab03e81.css.map": "/Portfolio/static/css/main.3ab03e81.css.map",
+    "main.aefd874e.js.map": "/Portfolio/static/js/main.aefd874e.js.map"
   },
   "entrypoints": [
-    "static/css/main.4c697c5b.css",
-    "static/js/main.8239afe8.js"
+    "static/css/main.3ab03e81.css",
+    "static/js/main.aefd874e.js"
   ]
 }
