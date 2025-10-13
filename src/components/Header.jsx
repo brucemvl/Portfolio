@@ -9,12 +9,11 @@ function Header(){
         <header>
             <div className="title">
             <h1>Portfolio Bruce Monnerville</h1>
-            <h2>Developpeur Web</h2>
-            </div>
-            <div className="logoAndMenu">
-            <img src={logo} alt="logo bm" />
+                        <img src={logo} alt="logo bm" />
+</div>
+            <h2>Developpeur React & React Native</h2>
+
             <Menu />
-            </div>
         </header>
     )
 }

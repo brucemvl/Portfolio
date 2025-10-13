@@ -27,8 +27,8 @@ function Fiche() {
             <section className="fiche">
                 <nav className="fiche__selecteur">
                 <ul>
-                    {active ? <li onClick={openContent} className="desc actif">Description</li>: <li onClick={openContent} className="desc">Description</li> }
-                    {active2 ? <li onClick={openContent} className="img actif">Images</li> : <li onClick={openContent} className="img">Images</li>}
+                    {active ? <li onClick={openContent} className="desc actif" style={{backgroundColor: "steelblue", fontWeight: 400}}>Description</li>: <li onClick={openContent} className="desc">Description</li> }
+                    {active2 ? <li onClick={openContent} className="img actif" style={{backgroundColor: "steelblue", fontWeight: 400}}>Images</li> : <li onClick={openContent} className="img">Images</li>}
                 </ul>
                 </nav>
                 {description ?

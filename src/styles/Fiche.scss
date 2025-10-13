@@ -96,10 +96,10 @@
                 display: flex;
                 list-style-type: none;
                 padding-inline-start: 0;
-                background-color: darkgrey;
                 border-radius: 5px;
                 height: 2em;
                 align-items: center;
+                gap: 1em;
 
                 li {
                     display: flex;
@@ -107,6 +107,10 @@
                     justify-content: center;
                     height: 100%;
                     align-items: center;
+                                    border-radius: 8px;
+                                    background-color: rgb(211, 211, 211);
+                                    font-weight: 200;
+
 
                     &:hover {
                         cursor: pointer;
@@ -119,12 +123,11 @@
 }
 
 .actif {
-    box-shadow: 0px 0px 5px 3px #524d4d inset;
+    box-shadow: 0px 0px 5px 3px #524d4d;
+    color: white;
 }
 
-.desc {
-    border-radius: 5px 0px 0px 5px;
-}
+
 
 .img {
     border-radius: 0px 5px 5px 0px;

@@ -1,7 +1,8 @@
 .blocMenu {
     display: flex;
     justify-content: flex-end;
-    margin-inline: 1%;
+    margin-inline: 2%;
+    margin-top: 2em;
 }
 
 .navMenu {
@@ -66,7 +67,7 @@
     ul {
         list-style-type: none;
         display: flex;
-        gap: 5%;
+        gap: 7%;
 
 
         a {
@@ -134,7 +135,7 @@
 
 @media (max-width: 767px) {
     .menu {
-        width: 17em;
+        width: 18em;
         transform: translateX(-102%) translateY(-35px);
         animation: drop2 0.8s ease-in-out;
 

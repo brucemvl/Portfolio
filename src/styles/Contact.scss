@@ -1,5 +1,51 @@
+.blocContact {
+font-family: Kanit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+background: linear-gradient(0deg, #abdee6 0%, rgb(0 0 0 / 0%) 42%, rgb(255 255 255 / 21%) 99.99%, rgba(255, 255, 255, 0.5) 100%);
+    background-color: steelblue;
+width: 70%;
+    margin-inline-start: 15%;
+        border-radius: 10px;
+        margin-top: 3em;
+        padding-block: 1em;
+
+        form {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 1em;
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.2em;
+
+            input {
+                text-align: center;
+                font-family: Kanit;
+            }
+            
+        
+        }
+        textarea {
+
+            width: 140%;
+            font-family: Kanit;
+            text-align: center;
+        }
+
+        .submit {
+            border-radius: 5px;
+            font-family: Kanit;
+        }
+    }
+}
+
+
 .contact {
-    font-family: kanit;
+    font-family: monospace;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,6 +55,7 @@
     margin-inline-start: 15%;
     margin-block: 3em;
     border-radius: 10px;
+    gap: 1.5em;
 
     div {
         display: flex;
@@ -22,6 +69,11 @@
 
 @media (max-width: 767px) {
 
+    .blocContact {
+
+        width: 88%;
+        margin-inline-start: 6%;
+    }
     .contact {
         width: 88%;
         margin-inline-start: 6%;

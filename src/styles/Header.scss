@@ -1,45 +1,56 @@
 header {
-    height: 14em;
+    height: 18em;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     font-family: kanit;
-background: linear-gradient(180deg, #ffffff 0%, rgb(0 0 0 / 0%) 42%, rgb(0 0 0 / 21%) 99.99%, rgb(255 255 255 / 50%) 100%);
-    background-color: lightsteelblue;
+background: linear-gradient(180deg, #ffffff 0%, rgb(122, 146, 184) 50%);
         border-bottom: 10px solid black;
+        padding-inline: 2%;
+        padding-bottom: 1em;
 
     .title {
-        margin-inline: 2em;
-    }
-
-    .logoAndMenu {
         display: flex;
-        flex-direction: column;
-        gap: 4em;
-        margin: 1em;
+        margin-inline: 1em;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
 
         img {
             height: 5em;
         }
     }
+
+    h2 {
+        text-align: center;
+        margin-block: 2em;
+        font-family: monospace;
+    }
+
+        
+    
 }
 
 @media (max-width: 767px){
     header {
 
+        height: 12em;
+
+        .title{
+
         h1
 {
-    font-size: 1.5em;
+    font-size: 1.2em;
 } 
-h2 {
-    font-size: 1.1em;
-}   
-.logoAndMenu {
-    justify-content: space-between;
+ 
 
     img {
-        height: 4em;
+        height: 3em;
     }
-}    
+}
+
+h2 {
+    font-size: 1.3em;
+}  
     }
 }
