@@ -15,7 +15,7 @@ function Home(){
                     <img src={bruce} alt="bruce"/>
                     <p> <span>Bienvenue sur mon portfolio ! 🎉
                         Je suis Bruce Monnerville, Developpeur Web fraichement diplomé 🌐 <br></br></span>
-                        J'aime concevoir des sites et des applications qui allient design , fonctionnalité et qui s'adaptent aux differentes tailles d'ecran 💻✨
+                        J'aime concevoir des sites et des applications qui allient design, fonctionnalité et qui s'adaptent aux differentes tailles d'ecran 💻✨
 Vous cherchez à créer un site internet professionnel ou une application web adaptée à vos besoins ?
 Je propose mes services aux entreprises, associations ou indépendants souhaitant renforcer leur présence en ligne.
 Que ce soit pour un site vitrine, une boutique en ligne, ou une application sur mesure, je vous accompagne de la conception à la mise en ligne.
