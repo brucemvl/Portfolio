@@ -1,9 +1,13 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.3ab03e81.css",
-    "main.js": "/Portfolio/static/js/main.4cba5f02.js",
+    "main.css": "/Portfolio/static/css/main.d453a679.css",
+    "main.js": "/Portfolio/static/js/main.2a5bcf81.js",
+    "static/media/brico3.png": "/Portfolio/static/media/brico3.f0a57b8f3b65efaeb3f6.png",
     "static/media/onze2.png": "/Portfolio/static/media/onze2.648e82bc09338ec18ba7.png",
+    "static/media/brico1.png": "/Portfolio/static/media/brico1.8934b4aec0c7babdaf25.png",
+    "static/media/brico4.png": "/Portfolio/static/media/brico4.70eb5b917a3f15e22ed6.png",
     "static/media/onze1.png": "/Portfolio/static/media/onze1.f4079cbfd41b987588f2.png",
+    "static/media/brico2.png": "/Portfolio/static/media/brico2.ef3a1865f46c71f1c82c.png",
     "static/media/onze3.png": "/Portfolio/static/media/onze3.e556a4b1060b53470635.png",
     "static/media/onze4.png": "/Portfolio/static/media/onze4.6a31ed8e140297392146.png",
     "static/media/sanstitre.jpg": "/Portfolio/static/media/sanstitre.e70d9a630cc3d17ba5d0.jpg",
@@ -13,6 +17,7 @@
     "static/media/sass.png": "/Portfolio/static/media/sass.c556a176a8b7d49fb670.png",
     "static/media/bookimobile2.png": "/Portfolio/static/media/bookimobile2.57637c9b7b076822195d.png",
     "static/media/reactnative.png": "/Portfolio/static/media/reactnative.8439a68744803bf68e11.png",
+    "static/media/briconnect.png": "/Portfolio/static/media/briconnect.038b7e2ff86389f5efa8.png",
     "static/media/bookidesktop.webp": "/Portfolio/static/media/bookidesktop.b68748ee14807493c030.webp",
     "static/media/bruce.jpg": "/Portfolio/static/media/bruce.60a2486bb9bf81abaf8c.jpg",
     "static/media/bookimobile1.png": "/Portfolio/static/media/bookimobile1.f2ed40ecd4465651526c.png",
@@ -47,11 +52,11 @@
     "static/media/bluel2.webp": "/Portfolio/static/media/bluel2.2031c0305136908425ad.webp",
     "static/media/qwenta2.webp": "/Portfolio/static/media/qwenta2.c50aed99b4922f49448c.webp",
     "index.html": "/Portfolio/index.html",
-    "main.3ab03e81.css.map": "/Portfolio/static/css/main.3ab03e81.css.map",
-    "main.4cba5f02.js.map": "/Portfolio/static/js/main.4cba5f02.js.map"
+    "main.d453a679.css.map": "/Portfolio/static/css/main.d453a679.css.map",
+    "main.2a5bcf81.js.map": "/Portfolio/static/js/main.2a5bcf81.js.map"
   },
   "entrypoints": [
-    "static/css/main.3ab03e81.css",
-    "static/js/main.4cba5f02.js"
+    "static/css/main.d453a679.css",
+    "static/js/main.2a5bcf81.js"
   ]
 }
