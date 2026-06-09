@@ -250,7 +250,13 @@ export const projets =
                 {
                     "nom": "MongoDb",
                     "logo": mongodb
+                },
+
+                {
+                    "nom": "NodeJS",
+                    "logo": nodejs
                 }
+
 
 
             ],
