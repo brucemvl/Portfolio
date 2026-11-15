@@ -7,10 +7,12 @@ import Travaux from './pages/Travaux.jsx';
 import Fiche from './pages/Fiche.jsx';
 import Footer from './components/Footer.jsx';
 import Contact from './pages/Contact.jsx';
+import ScrollToTop from "./components/ScrollToTop";
 
 ReactDOM.render(
     <React.StrictMode>
         <Router>
+             <ScrollToTop />
             <Header />
             <Routes>
                 <Route path="/" element={<Home />} />
