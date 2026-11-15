@@ -2,6 +2,7 @@ import bruce from "../assets/images/bruce.jpg";
 import onze from "../assets/images/onze/sanstitre.jpg";
 import "../styles/Home.scss";
 import { frontend, backend, outils } from "../datas/Projets";
+import { NavLink } from "react-router-dom";
 
 function SkillGroup({ title, skills }) {
     return (
@@ -52,9 +53,9 @@ function Home() {
                         je vous accompagne de la conception jusqu'à la mise en ligne.
                     </p>
 
-                    <a href="#onze" className="home-link">
-                        Découvrir mon parcours <span>↓</span>
-                    </a>
+                    <NavLink to="/travaux" className="home-link">
+                        Découvrir mes travaux <span>↓</span>
+                    </NavLink>
                 </div>
 
                 <div className="presentation-photo">
