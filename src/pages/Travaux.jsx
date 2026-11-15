@@ -1,51 +1,80 @@
-import { projets } from "../datas/Projets"
-import Carte from "../components/Carte"
-import "../styles/Travaux.scss"
-import Filtres from "../components/Filtres"
-import { useState } from "react"
-import { Link } from "react-router-dom"
+import { projets } from "../datas/Projets";
+import Carte from "../components/Carte";
+import "../styles/Travaux.scss";
+import Filtres from "../components/Filtres";
+import { useMemo, useState } from "react";
+import { Link } from "react-router-dom";
 
 function Travaux() {
+    const [filter, setFilter] = useState("");
 
-    const tech = projets.reduce(
-        (acc, elem) =>
-            acc.includes(elem.technologies) ? acc : acc.concat(elem.technologies),
-        []
-    )
+    // Récupération de toutes les technologies sans doublons
+    const technologies = useMemo(() => {
+        return [
+            ...new Set(
+                projets.flatMap(projet =>
+                    projet.technologies
+                        .flatMap(sousTableau => sousTableau)
+                        .map(tech => tech.nom)
+                )
+            )
+        ];
+    }, []);
 
-    const techno = tech.map((element) => element.nom)
+    // Filtrage des projets
+    const projetsFiltres = projets.filter(projet => {
+        const nomsTechnologies = projet.technologies
+            .flatMap(sousTableau => sousTableau)
+            .map(tech => tech.nom);
 
-    const technologies = techno.reduce(
-        (acc, elem) =>
-            acc.includes(elem) ? acc : acc.concat(elem),
-        []
-    )
-
-
-    const [filter, setFilter] = useState("")
-
+        return !filter || nomsTechnologies.includes(filter);
+    });
 
     return (
-        <div className="blocpage">
-        <section className="travaux">
-            <h2>Projets réalisés</h2>
-            <Filtres technologies={technologies} setFilter={setFilter} />
-            <div className="travaux__cartes">
-                {projets.map(({ title, cover, technologies, id }) => {
-                    // Aplatir les technologies du projet
-                    const nomsTechnologies = technologies.flatMap(sousTableau => sousTableau).map(objet => objet.nom);
+        <main className="blocpage">
+            <section className="travaux">
+                <div className="travaux__intro">
+                    <span className="travaux__surtitle">MON PORTFOLIO</span>
+                    <h2>Mes projets</h2>
+                    <p>
+                        Découvrez les projets que j'ai réalisés,
+                        les technologies utilisées et les solutions développées.
+                    </p>
+                </div>
 
-                    // Vérifier si le filtre est appliqué et si le projet correspond
-                    const matchesFilter = !filter || nomsTechnologies.includes(filter);
+                <Filtres
+                    technologies={technologies}
+                    filter={filter}
+                    setFilter={setFilter}
+                />
 
-                    return matchesFilter ? (
-                        <Link to={`/fiche/${id}`} ><Carte title={title} cover={cover} key={"projet" + title} /></Link>
-                    ) : null;
-                })}
-            </div>
-        </section>
-        </div>
+                <div className="travaux__resultats">
+                    <p>
+                        {projetsFiltres.length} projet(s)
+                        {filter && ` — ${filter}`}
+                    </p>
+                </div>
+
+                <div className="travaux__cartes">
+                    {projetsFiltres.map(({ title, cover, id }) => (
+                        <Link
+                            to={`/fiche/${id}`}
+                            key={"projet-" + id}
+                            className="travaux__lien"
+                        >
+                            <Carte title={title} cover={cover} />
+                        </Link>
+                    ))}
+                </div>
+
+                {projetsFiltres.length === 0 && (
+                    <p className="travaux__vide">
+                        Aucun projet ne correspond à cette technologie.
+                    </p>
+                )}
+            </section>
+        </main>
     );
 }
 
-export default Travaux
+export default Travaux;

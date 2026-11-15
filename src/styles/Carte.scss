@@ -1,40 +1,68 @@
 .carte {
-    width: 12em;
-    height: 14em;
+    height: 100%;
+    min-height: 245px;
     display: flex;
-    flex-direction: column-reverse;
-    box-shadow: 0px 0px 8px 2px black;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-block: 0.5em;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: white;
+    border: 1px solid #e7ecf3;
     border-radius: 15px;
-    background: linear-gradient(180deg, #ffffff 0%, rgba(0, 0, 0, 0) 42%, rgba(0, 0, 0, 0.21) 99.99%, rgba(255, 255, 255, 0.5) 100%);
-    background-color: lightsteelblue;
-    animation: fade 1s ease-in-out;
-    transition-duration: 0.4s;
+    box-shadow: 0 4px 15px rgba(23, 36, 58, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 
-    .carte__title {
-        text-align: center;
+    &:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 12px 25px rgba(23, 36, 58, 0.12);
     }
 
-    .carte__cover {
-        width: 90%;
+    &__image {
+        height: 175px;
+        padding: 12px;
+        background-color: #f7f9fc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__cover {
+        width: 100%;
+        height: 100%;
         object-fit: contain;
-        border-radius: 10px 10px 0px 0px;
+        border-radius: 8px;
+    }
+
+    &__contenu {
+        padding: 12px 15px 15px;
+    }
+
+    &__title {
+        color: #17243a;
+        font-size: 1.1em;
+        margin: 0 0 5px;
+        text-align: left;
+    }
+
+    &__voir {
+        color: #3478f6;
+        font-size: 0.85em;
+        font-weight: 600;
     }
 }
 
+@media (max-width: 767px) {
+    .carte {
+        min-height: 210px;
 
-.carte:hover {
-    transform: scale(1.1);
-}
+        &__image {
+            height: 140px;
+        }
 
-@keyframes fade {
-    0% {
-        opacity: 0;
-    }
+        &__contenu {
+            padding: 10px;
+        }
 
-    100% {
-        opacity: 1;
+        &__title {
+            font-size: 0.95em;
+        }
     }
 }

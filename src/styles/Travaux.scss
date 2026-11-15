@@ -1,99 +1,151 @@
-.blocpage {
 
+.blocpage {
     display: flex;
     justify-content: center;
-    margin-bottom: 2em;
+    min-height: 70vh;
+    margin-bottom: 3em;
 
     .travaux {
         display: flex;
         flex-direction: column;
-        font-family: kanit;
         align-items: center;
-        width: 85%;
+        width: 90%;
+        max-width: 1250px;
+        font-family: Kanit, sans-serif;
 
-        .filtres {
-            display: flex;
-            list-style-type: none;
-            gap: 2%;
-            justify-content: center;
-            flex-wrap: wrap;
-            padding-inline-start: 0;
+        &__intro {
+            text-align: center;
+            max-width: 650px;
+            margin: 3em 0 2em;
 
-            li {
-                border: 4px solid;
-                border-radius: 10px;
-                padding-inline: 1%;
-                color: steelblue;
-                font-weight: 600;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 9em;
-                height: 2em;
-                margin-block: 5px;
-                transition-duration: 0.4s;
+            h2 {
+                color: #17243a;
+                font-size: 2.5em;
+                margin: 0.15em 0;
+            }
 
-                &:hover {
-                    background-color: steelblue;
-                    cursor: pointer;
-                    color: white;
-                }
+            p {
+                color: #68758a;
+                font-size: 1.05em;
+                line-height: 1.6;
             }
         }
 
-        
-
-        .travaux__cartes {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 15px;
-            background-color: steelblue;
-            border-radius: 15px;
-            padding-block: 2em;
-            width: 81%;
-            padding-inline: 2%;
+        &__surtitle {
+            color: #3478f6;
+            font-size: 0.85em;
+            font-weight: 700;
+            letter-spacing: 3px;
         }
-    
+
+        &__resultats {
+            width: 100%;
+            color: #68758a;
+            font-size: 0.9em;
+            margin: 1em 0 0.5em;
+        }
+
+        &__cartes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            width: 100%;
+            padding: 2em;
+            box-sizing: border-box;
+            background-color: #e8f1ff;
+            border: 1px solid #e7ecf3;
+            border-radius: 20px;
+        }
+
+        &__lien {
+            text-decoration: none;
+            color: inherit;
+            min-width: 0;
+        }
+
+        &__vide {
+            color: #68758a;
+            padding: 2em;
+        }
     }
 }
-
-a {
-    text-decoration: none;
-    color: black;
-    font-weight: 500;
-}
-
-@media (max-width: 1024px){
-    .carte {
-        width: 10em;
-        height: 12em;
-
-        .carte__cover {
-            height: 5.5em;
-        }
-    }
-}
-
-@media (max-width: 767px){
-    .blocpage {
-    .travaux {
-width: 90%;
 
 .filtres {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 0;
+    margin: 1em 0;
 
-    li {
-        font-size: 0.85em;
-        font-weight: 500;
-        width: 9em;
-    }
-}
-    
-    .carte {
+    .filtre {
+        border: 1px solid #dce5f2;
+        border-radius: 30px;
+        padding: 10px 20px;
+        background-color: white;
+        color: #526178;
+        font-family: inherit;
+        font-size: 0.95em;
+        font-weight: 600;
+        cursor: pointer;
+        transition: 0.25s ease;
 
-        .carte__cover {
+        &:hover {
+            border-color: #3478f6;
+            color: #3478f6;
+            background-color: #eaf2ff;
+        }
+
+        &.actif {
+            background-color: #3478f6;
+            border-color: #3478f6;
+            color: white;
         }
     }
 }
+
+@media (max-width: 767px) {
+    .blocpage {
+        .travaux {
+            width: 92%;
+
+            &__intro {
+                margin-top: 2em;
+
+                h2 {
+                    font-size: 2em;
+                }
+
+                p {
+                    font-size: 0.95em;
+                }
+            }
+
+            &__cartes {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 12px;
+                padding: 12px;
+            }
+        }
+    }
+
+    .filtres {
+        gap: 7px;
+
+        .filtre {
+            padding: 8px 13px;
+            font-size: 0.85em;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .blocpage {
+        .travaux {
+            &__cartes {
+                grid-template-columns: 1fr;
+            }
+        }
     }
 }

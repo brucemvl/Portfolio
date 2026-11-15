@@ -1,16 +1,24 @@
-function Filtres({technologies, setFilter}){
-
+function Filtres({ technologies, filter, setFilter }) {
     return (
-        <nav>
-            <ul className="filtres">
-                <li className="" onClick={()=>{setFilter("")}}>Tous</li>
-                {technologies.map((element)=>
-                <li key={element} onClick={()=>{setFilter(element)}}>{element}</li>
-                )}
-            </ul>
-        </nav>
-    )
+        <nav className="filtres" aria-label="Filtrer les projets par technologie">
+            <button
+                className={!filter ? "filtre actif" : "filtre"}
+                onClick={() => setFilter("")}
+            >
+                Tous
+            </button>
 
+            {technologies.map(element => (
+                <button
+                    key={element}
+                    className={filter === element ? "filtre actif" : "filtre"}
+                    onClick={() => setFilter(element)}
+                >
+                    {element}
+                </button>
+            ))}
+        </nav>
+    );
 }
 
-export default Filtres
+export default Filtres;
