@@ -92,7 +92,7 @@ function Home() {
                     <p>
                         11sur10 est une application mobile que j'ai développée
                         avec React Native et déployée sur les différents stores.
-                        Elle compte aujourd'hui environ 200 utilisateurs.
+                        Elle compte aujourd'hui environ 2000 utilisateurs.
                     </p>
 
                     <p>
